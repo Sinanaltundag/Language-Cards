@@ -1,7 +1,12 @@
 .card-container{
     width:350px;
     background-color:#F38B29;
-    background: linear-gradient(45deg,#F38B29,green,#F38B29);
+    /* background: linear-gradient(45deg,#F38B29,#53C0DD,#F38B29); */
+    background-image: repeating-linear-gradient(
+          45deg,
+          #F38B29 0px 300px,
+          #53C0DD 300px 380px
+        );
     margin: 10px auto;
     border-radius: 20px;
     display: flex;
