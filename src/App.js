@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ReactComponent as ReactIcon } from "./assets/react.svg";
+import Card from "./components/cards/card";
+import { categories } from "./helper/data";
+
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReactIcon className="appIcon" />
+      <div className="card-container">
+        <h2>Languages</h2>
+        {categories.map((item, index) => {
+          return <Card categories={item} key={index} />;
+        })}
+      </div>
     </div>
   );
 }
