@@ -4,8 +4,8 @@
     /* background: linear-gradient(45deg,#F38B29,#53C0DD,#F38B29); */
     background-image: repeating-linear-gradient(
           45deg,
-          #F38B29 0px 300px,
-          #53C0DD 300px 380px
+          #F38B29 0px 270px,
+          #53C0DD 270px 350px
         );
     margin: 10px auto;
     border-radius: 20px;
@@ -21,7 +21,7 @@
   padding:20px;
   margin-bottom: 10px;
   transition: 0.3s ease;
-  height: 130px;
+  height: 110px;
 }
 .card:hover img { 
     transform: scale(1.2); 

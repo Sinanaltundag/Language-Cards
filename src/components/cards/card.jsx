@@ -9,6 +9,8 @@ const Card = (props) => {
   const [isShow, setİsShow] = useState(true);
   const handleClick = () => {
     setİsShow(!isShow);
+  
+    isShow&&setTimeout(()=>setİsShow(true),2000)
   };
   //  isShow={isShow}
   return (
